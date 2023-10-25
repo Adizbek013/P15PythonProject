@@ -1,4 +1,4 @@
-jfrom playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright
 import os
 
 
@@ -15,6 +15,7 @@ def play(username, password):
         page.get_by_alt_text(f"{username}'s profile picture").click()
         page.get_by_role("link", name="Clip").click()
         page.wait_for_timeout(1000)
+        print()
         page.screenshot(path='post_one.png')
         browser.close()
 
