@@ -1,4 +1,4 @@
-from playwright.sync_api import sync_playwright
+jfrom playwright.sync_api import sync_playwright
 import os
 
 
